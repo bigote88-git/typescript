@@ -107,9 +107,9 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-    "funciones/*.ts", "objetos/*.ts", "tipos/*.ts"
+    "node_modules"
   ],
   "include": [
-    "clases/*.ts"
+    "interfaces/*.ts"
   ]
 }
