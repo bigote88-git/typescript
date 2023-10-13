@@ -1,41 +1,12 @@
 "use strict";
-(() => {
-    const client1 = {
-        name: 'fsdfsd',
-        address: {
-            id: 123,
-            zip: '3658',
-            street: 'figther'
-        },
-        getFullAddress() { }
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3);
     };
-    const client2 = {
-        name: 'supplier',
-        address: {
-            id: 456,
-            zip: '3658',
-            street: 'figther'
-        },
-        getFullAddress(id) {
-        },
+    Validations.validateDate = (myDate) => {
+        return (isNaN(myDate.valueOf()));
     };
-})();
-(() => {
-    class Dog {
-        constructor(name) {
-            this.name = name;
-        }
-        run() {
-            console.log('I am running');
-        }
-    }
-    const gobi = new Dog('gobi');
-    gobi.run();
-})();
-(() => {
-    let functionSum;
-    functionSum = (a, b) => {
-        return a + b;
-    };
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('Fer'));
 //# sourceMappingURL=main.js.map
